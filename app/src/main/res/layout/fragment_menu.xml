@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="919px"
+        android:layout_height="188px"
+        android:layout_marginTop="194px"
+        android:src="@drawable/top">
+    </ImageView>
+
+<!--    376 109-->
+    <ImageView
+        android:id="@+id/menu_jrsxk"
+        android:layout_width="376px"
+        android:layout_height="109px"
+        android:layout_below="@+id/top"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/jrsxk">
+    </ImageView>
+    <ImageView
+        android:layout_width="408px"
+        android:layout_height="424px"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/danghui">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/menu_setting"
+        android:layout_width="115px"
+        android:layout_height="115px"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="90px"
+        android:layout_marginRight="32px"
+        android:src="@drawable/menu_setting" />
+
+    <LinearLayout
+        android:id="@+id/ll_left_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30px"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/menu_dwgwx"
+            android:layout_width="270px"
+            android:layout_height="231px"
+            android:src="@drawable/dwgwx" />
+
+        <ImageView
+            android:id="@+id/menu_djbk"
+            android:layout_width="270px"
+            android:layout_height="231px"
+            android:src="@drawable/djbk" />
+        <ImageView
+            android:id="@+id/menu_zzsrly"
+            android:layout_width="270px"
+            android:layout_height="231px"
+            android:src="@drawable/zzsrly" />
+
+        <ImageView
+            android:id="@+id/menu_xxrd"
+            android:layout_width="270px"
+            android:layout_height="231px"
+            android:src="@drawable/menu_xxrd"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <com.hckj.yddxst.widget.BubbleLayout
+        android:id="@+id/layout_bubble"
+        android:layout_width="375px"
+        android:layout_height="250px"
+        android:layout_below="@id/menu_setting"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="120px"
+        android:layout_marginRight="10px"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_alignTop="@id/ll_left_container"
+        android:id="@+id/menu_xsms"
+        android:layout_width="278px"
+        android:layout_height="190px"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/menu_khms"
+        android:layout_marginRight="20px"
+        android:src="@drawable/xsms" />
+    <ImageView
+        android:id="@+id/menu_khms"
+        android:layout_width="278px"
+        android:layout_height="190px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20px"
+        android:src="@drawable/khms" />
+    <ImageView
+        android:id="@+id/menu_ghghszl"
+        android:layout_width="278px"
+        android:layout_height="190px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/menu_khms"
+        android:layout_marginTop="33px"
+        android:layout_marginRight="20px"
+        android:src="@drawable/hsghgzl" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_device_num"
+        android:layout_width="900px"
+        android:layout_height="600px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_dialog_progress"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70px"
+            android:gravity="center"
+            android:text="请先认证设备号"
+            android:textColor="@color/colorWhite"
+            android:textSize="60px"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/et_device_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180px"
+            android:layout_marginTop="100px"
+            android:layout_marginRight="180px"
+            android:layout_marginBottom="60px"
+            android:background="@color/colorWhite"
+            android:ellipsize="end"
+            android:imeOptions="actionDone"
+            android:padding="15px"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="60px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_confirm"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="240px"
+                android:layout_height="96px"
+                android:background="@drawable/bg_dialog_btn_ok"
+                android:text="确认"
+                android:textColor="@color/colorWhite"
+                android:textSize="40px" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="240px"
+                android:layout_height="96px"
+                android:layout_marginLeft="40px"
+                android:background="@drawable/bg_dialog_btn_ok"
+                android:text="取消"
+                android:textColor="@color/colorWhite"
+                android:textSize="40px" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="235px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_bot_circle" />
+        <ImageView
+            android:id="@+id/menu_zsjzj"
+            android:layout_width="410px"
+            android:layout_height="171px"
+            android:layout_above="@id/iv_bot_circle"
+            android:layout_centerInParent="true"
+            android:src="@drawable/zsjzj" />
+
+        <ImageView
+            android:id="@+id/menu_djzhzx"
+            android:layout_width="314px"
+            android:layout_height="175px"
+            android:layout_alignTop="@id/menu_zsjzj"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="33px"
+            android:src="@drawable/djzhzx" />
+
+        <ImageView
+            android:id="@+id/menu_znjjy"
+            android:layout_width="347px"
+            android:layout_height="176px"
+            android:layout_alignTop="@id/menu_zsjzj"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20px"
+            android:src="@drawable/znjjy" />
+
+
+        <ImageView
+            android:id="@+id/iv_bot_circle"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/bg_bot_2" />
+
+        <RelativeLayout
+            android:id="@+id/layout_sub_menu"
+            android:layout_width="808px"
+            android:layout_height="200px"
+            android:layout_above="@id/menu_zsjzj"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30px"
+            android:visibility="gone">
+
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/menu_gwx"-->
+            <!--                android:layout_width="403px"-->
+            <!--                android:layout_height="75px"-->
+            <!--                android:src="@drawable/menu_gwx" />-->
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/menu_xsms"-->
+            <!--                android:layout_width="403px"-->
+            <!--                android:layout_height="75px"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:src="@drawable/menu_xuanshi" />-->
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/menu_khms"-->
+            <!--                android:layout_width="403px"-->
+            <!--                android:layout_height="75px"-->
+            <!--                android:layout_alignParentLeft="true"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:src="@drawable/menu_khms" />-->
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/menu_hszl"-->
+            <!--                android:layout_width="403px"-->
+            <!--                android:layout_height="75px"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:src="@drawable/menu_hszl" />-->
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/menu_sphy"-->
+            <!--                android:layout_width="403px"-->
+            <!--                android:layout_height="75px"-->
+            <!--                android:layout_alignParentLeft="true"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:src="@drawable/menu_sphy" />-->
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/menu_sjbg"-->
+            <!--                android:layout_width="403px"-->
+            <!--                android:layout_height="75px"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:src="@drawable/menu_dsjbg" />-->
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

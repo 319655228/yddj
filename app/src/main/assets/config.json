@@ -1,0 +1,187 @@
+{
+  "name": "党校助手",
+  "effectID": "effect_ydxx",
+  "icon": "",
+  "gender": 0,
+  "avatarPath": "avatar/STA_chenshan.bundle",
+  "bundlePath": [],
+  "defaultAnimPath": [
+    {
+      "name": "呼吸",
+      "icon": "",
+      "path": "anims/呼吸.bundle"
+    }
+  ],
+  "animPath": [
+    {
+      "name": "信任",
+      "icon": "",
+      "path": "anims/信任.bundle"
+    },
+    {
+      "name": "同意",
+      "icon": "",
+      "path": "anims/同意.bundle"
+    },
+    {
+      "name": "呼吸",
+      "icon": "",
+      "path": "anims/呼吸.bundle"
+    },
+    {
+      "name": "强调",
+      "icon": "",
+      "path": "anims/强调.bundle"
+    },
+    {
+      "name": "恐惧",
+      "icon": "",
+      "path": "anims/恐惧.bundle"
+    },
+    {
+      "name": "悲伤",
+      "icon": "",
+      "path": "anims/悲伤.bundle"
+    },
+    {
+      "name": "惊讶",
+      "icon": "",
+      "path": "anims/惊讶.bundle"
+    },
+    {
+      "name": "扇风",
+      "icon": "",
+      "path": "anims/扇风.bundle"
+    },
+    {
+      "name": "抱胸",
+      "icon": "",
+      "path": "anims/抱胸.bundle"
+    },
+    {
+      "name": "挥手",
+      "icon": "",
+      "path": "anims/挥手.bundle"
+    },
+    {
+      "name": "摇摆",
+      "icon": "",
+      "path": "anims/摇摆.bundle"
+    },
+    {
+      "name": "摊手",
+      "icon": "",
+      "path": "anims/摊手.bundle"
+    },
+    {
+      "name": "期望",
+      "icon": "",
+      "path": "anims/期望.bundle"
+    },
+    {
+      "name": "歪头",
+      "icon": "",
+      "path": "anims/歪头.bundle"
+    },
+    {
+      "name": "点头",
+      "icon": "",
+      "path": "anims/点头.bundle"
+    },
+    {
+      "name": "点赞",
+      "icon": "",
+      "path": "anims/点赞.bundle"
+    },
+    {
+      "name": "生气",
+      "icon": "",
+      "path": "anims/生气.bundle"
+    },
+    {
+      "name": "疑惑",
+      "icon": "",
+      "path": "anims/疑惑.bundle"
+    },
+    {
+      "name": "鞠躬",
+      "icon": "",
+      "path": "anims/鞠躬.bundle"
+    },
+    {
+      "name": "高兴",
+      "icon": "",
+      "path": "anims/高兴.bundle"
+    },
+    {
+      "name": "强调2",
+      "icon": "",
+      "path": "anims/强调2.bundle"
+    },
+    {
+      "name": "不耐烦",
+      "icon": "",
+      "path": "anims/不耐烦.bundle"
+    },
+    {
+      "name": "单手强调",
+      "icon": "",
+      "path": "anims/单手强调.bundle"
+    },
+    {
+      "name": "单手握拳",
+      "icon": "",
+      "path": "anims/单手握拳.bundle"
+    },
+    {
+      "name": "单手放下",
+      "icon": "",
+      "path": "anims/单手放下.bundle"
+    },
+    {
+      "name": "双手合毕",
+      "icon": "",
+      "path": "anims/双手合毕.bundle"
+    },
+    {
+      "name": "双手张开",
+      "icon": "",
+      "path": "anims/双手张开.bundle"
+    },
+    {
+      "name": "双手打开",
+      "icon": "",
+      "path": "anims/双手打开.bundle"
+    },
+    {
+      "name": "左侧展示",
+      "icon": "",
+      "path": "anims/左侧展示.bundle"
+    },
+    {
+      "name": "激情澎湃",
+      "icon": "",
+      "path": "anims/激情澎湃.bundle"
+    },
+    {
+      "name": "自然双手",
+      "icon": "",
+      "path": "anims/自然双手.bundle"
+    }
+  ],
+  "bsConfigPath": "",
+  "lightPath": "",
+  "backgroundPath": "avatar/STA_bg.bundle",
+  "coordinate": {
+    "fixX": 0,
+    "fixY": 50.0,
+    "fixZ": -700.0
+  },
+  "coordinateHalf": {
+    "fixX": 0,
+    "fixY": 10.0,
+    "fixZ": -600.0
+  },
+  "speakerCode": "zh",
+  "emotionCode": 1
+}

@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_badge"
+        android:layout_width="95px"
+        android:layout_height="106px"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginTop="46px"
+        android:layout_marginRight="54px"
+        android:background="@drawable/bg_menu_badge" />
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="690px"
+        android:layout_height="225px"
+        android:layout_below="@id/iv_badge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px">
+
+        <ImageView
+            android:layout_width="84px"
+            android:layout_height="77px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/img_corner_left" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="移动党校"
+            android:textColor="@color/colorWhite"
+            android:textSize="90px"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="84px"
+            android:layout_height="77px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/img_corner_right" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

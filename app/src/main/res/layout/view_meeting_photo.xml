@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!--195px-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="20px"
+            android:layout_height="375px"
+            android:layout_alignLeft="@id/layout_right"
+            android:layout_alignTop="@id/layout_right"
+            android:layout_marginLeft="-15px"
+            android:background="@drawable/img_title_left" />
+
+        <ImageView
+            android:layout_width="117px"
+            android:layout_height="375px"
+            android:layout_alignTop="@id/layout_right"
+            android:layout_alignRight="@id/layout_right"
+            android:layout_marginRight="-15px"
+            android:background="@drawable/img_title_right" />
+
+        <LinearLayout
+            android:id="@+id/layout_right"
+            android:layout_width="586px"
+            android:layout_height="350px"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="63px"
+            android:layout_marginRight="47px"
+            android:background="@drawable/bg_meeting_title"
+            android:orientation="vertical"
+            android:paddingTop="10px">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="10px"
+                android:padding="30px"
+                android:text="  请调整位置进行拍照，该照片会自动导入到会议纪要中并上传至您的专用后台"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="375px"
+            android:layout_height="375px"
+            android:layout_marginLeft="45px"
+            android:layout_marginTop="63px">
+
+            <ImageView
+                android:layout_width="112px"
+                android:layout_height="match_parent"
+                android:background="@drawable/img_people_left" />
+
+            <ImageView
+                android:layout_width="14px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/img_people_right" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="770px"
+        android:layout_height="1161px"
+        android:layout_marginTop="20px">
+
+        <com.google.android.cameraview.CameraView
+            android:id="@+id/camera_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="false"
+            android:keepScreenOn="true"
+            app:autoFocus="true"
+            app:facing="front"
+            app:flash="off" />
+
+        <ImageView
+            android:id="@+id/iv_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#33000000"
+            android:gravity="center"
+            android:text="正在为您处理中"
+            android:textColor="@color/colorWhite"
+            android:textSize="40px"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_photo"
+            android:layout_width="233px"
+            android:layout_height="85px"
+            android:background="@drawable/bg_meeting_photo"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/btn_rotate"
+            android:layout_width="233px"
+            android:layout_height="85px"
+            android:background="@drawable/bg_meeting_rotate"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/btn_rephoto"
+            android:layout_width="233px"
+            android:layout_height="85px"
+            android:layout_marginLeft="45px"
+            android:background="@drawable/bg_meeting_rephoto"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/btn_upload"
+            android:layout_width="233px"
+            android:layout_height="85px"
+            android:layout_marginLeft="45px"
+            android:background="@drawable/bg_meeting_upload"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="@drawable/bg_bot_circle"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/btn_previous"
+            android:layout_width="320px"
+            android:layout_height="120px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_pre_short" />
+
+        <ImageView
+            android:id="@+id/btn_next"
+            android:layout_width="416px"
+            android:layout_height="130px"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_next_short" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTransparent">
+
+    <RelativeLayout
+        android:id="@+id/layout_qrcode"
+        android:layout_width="390px"
+        android:layout_height="390px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600px"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_qrcode"
+            android:layout_width="356px"
+            android:layout_height="356px"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:layout_width="113px"
+            android:layout_height="117px"
+            android:background="@drawable/bg_qrcode_sideleft" />
+
+        <ImageView
+            android:layout_width="117px"
+            android:layout_height="113px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_qrcode_sideright" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_qrcode"
+        android:layout_marginTop="25px"
+        android:gravity="center"
+        android:text="请使用微信扫描二维码获取会议记录"
+        android:textColor="@color/colorWhite"
+        android:textSize="35px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bot_circle">
+
+        <ImageView
+            android:id="@+id/btn_return"
+            android:layout_width="424px"
+            android:layout_height="117px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_bot_back3" />
+    </RelativeLayout>
+
+</RelativeLayout>

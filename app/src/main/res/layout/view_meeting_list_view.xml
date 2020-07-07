@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lv_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="15px"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarThumbVertical="@drawable/layer_scroll_bar"
+        android:scrollbarTrackVertical="@color/transparent"
+        android:scrollbars="vertical" />
+
+    <ImageView
+        android:id="@+id/btn_pre"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_pre" />
+
+    <ImageView
+        android:id="@+id/btn_next"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_next" />
+</RelativeLayout>

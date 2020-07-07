@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_menu_new">
+
+    <!--    头部  -->
+    <ImageView
+        android:layout_width="107px"
+        android:layout_height="107px"
+        android:layout_alignLeft="@id/iv_title"
+        android:layout_alignTop="@id/iv_title"
+        android:layout_marginLeft="-50px"
+        android:layout_marginTop="40px"
+        android:background="@drawable/img_dh" />
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_width="712px"
+        android:layout_height="202px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108px"
+        android:background="@drawable/bg_shyk_title"
+        android:padding="50px"
+        android:src="@drawable/bg_title_dwgwx" />
+
+    <!--    内容-->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:layout_below="@id/iv_title"
+        android:layout_marginLeft="137px"
+        android:layout_marginTop="100px"
+        android:layout_marginRight="137px"
+        android:background="@drawable/bg_crumbs"
+        android:gravity="center|left"
+        android:paddingLeft="32px"
+        android:textColor="@color/colorWhite"
+        android:textSize="30px" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="809px"
+        android:layout_height="1074px"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        android:background="@drawable/bg_rvlist"
+        android:paddingTop="85px"
+        android:paddingBottom="77px" />
+
+    <ImageView
+        android:layout_width="673px"
+        android:layout_height="249px"
+        android:layout_alignRight="@id/rv_list"
+        android:layout_alignBottom="@id/rv_list"
+        android:layout_marginRight="-34px"
+        android:layout_marginBottom="-43px"
+        android:background="@drawable/bg_ppt_right" />
+
+
+    <!--    底部-->
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="430px"
+        android:layout_height="171px"
+        android:layout_above="@id/iv_bot_circle"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bg_bot_back2" />
+
+    <ImageView
+        android:id="@+id/iv_bot_circle"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/bg_bot_2" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="235px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bot_circle" />
+
+
+</RelativeLayout>

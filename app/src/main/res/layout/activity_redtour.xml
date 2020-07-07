@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="1920px"
+    android:orientation="vertical">
+
+    <com.hckj.yddxst.widget.EmptyControlVideo
+        android:id="@+id/video_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_marginTop="280px"
+        android:layout_width="match_parent"
+        android:textSize="80px"
+        android:text="共和国红色之旅"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_marginTop="1526px"
+        android:text=""
+        android:layout_marginLeft="250px"
+        android:textSize="40px"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginRight="250px"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/iv_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="805px"
+        android:layout_width="621px"
+        android:layout_height="621px"/>
+
+    <ImageView
+        android:layout_width="80px"
+        android:layout_height="90px"
+        android:id="@+id/iv_left"
+        android:layout_marginLeft="20px"
+        android:layout_centerVertical="true"
+        android:background="@drawable/img_arrow_left" />
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_marginRight="20px"
+        android:layout_width="80px"
+        android:layout_height="90px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/img_arrow_right" />
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="40px"
+        android:textColor="@color/colorWhite"
+        android:text="点击图片进入"
+        android:textStyle="bold"
+        android:textSize="40px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <include
+        layout="@layout/include_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

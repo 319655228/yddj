@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_menu_new">
+
+    <!--    头部  -->
+    <ImageView
+        android:id="@+id/iv_dh"
+        android:layout_width="107px"
+        android:layout_height="107px"
+        android:layout_alignLeft="@id/iv_title"
+        android:layout_alignTop="@id/iv_title"
+        android:layout_marginLeft="-70px"
+        android:layout_marginTop="40px"
+        android:background="@drawable/img_dh" />
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_width="712px"
+        android:layout_height="202px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108px"
+        android:background="@drawable/bg_shyk_title" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_dh"
+        android:layout_toRightOf="@id/iv_dh"
+        android:paddingLeft="50px"
+        android:paddingRight="200px"
+        android:text=""
+        android:textColor="#FFF7E7B4"
+        android:textSize="72px" />
+
+    <!--    内容-->
+    <RelativeLayout
+        android:id="@+id/layout_content"
+        android:layout_width="831px"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="467px"
+        android:orientation="vertical"
+        android:background="#85CF9A75"
+        android:paddingLeft="40px"
+        android:paddingTop="20px"
+        android:paddingRight="24px">
+
+        <ImageView
+            android:id="@+id/iv_content"
+            android:layout_width="match_parent"
+            android:layout_height="800px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="10px"
+            android:layout_below="@+id/iv_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/ll_qrcode"
+                android:layout_width="170px"
+                android:background="@drawable/bg_qr_code"
+                android:layout_centerHorizontal="true"
+                android:layout_height="170px">
+
+                <ImageView
+                    android:id="@+id/iv_qrcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10px" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扫描二维码获取文档"
+                android:layout_below="@+id/ll_qrcode"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="12px"
+                android:background="@android:color/transparent"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+<!--        <ImageView-->
+<!--            android:layout_width="673px"-->
+<!--            android:layout_height="249px"-->
+<!--            android:layout_marginRight="4dp"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:background="@drawable/bg_ppt_right" />-->
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="165px"
+        android:layout_height="129px"
+        android:layout_alignLeft="@id/layout_content"
+        android:layout_alignTop="@id/layout_content"
+        android:background="@drawable/bg_ppt_left" />
+    <ImageView
+        android:layout_width="673px"
+        android:layout_height="249px"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="10px"
+        android:layout_alignRight="@id/layout_content"
+        android:layout_alignBottom="@id/layout_content"
+        android:background="@drawable/bg_ppt_right" />
+
+    <!--    底部-->
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="430px"
+        android:layout_height="171px"
+        android:layout_above="@id/iv_bot_circle"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bg_bot_back2" />
+
+    <ImageView
+        android:id="@+id/iv_bot_circle"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/bg_bot_2" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="235px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bot_circle" />
+
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:gravity="right"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_previous"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:layout_margin="25px"
+        android:background="@drawable/shape_corner"
+        android:gravity="center"
+        android:text="向上翻页"
+        android:textColor="@color/colorWhite"
+        android:textSize="50px" />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:layout_margin="25px"
+        android:background="@drawable/shape_corner"
+        android:gravity="center"
+        android:text="向下翻页"
+        android:textColor="@color/colorWhite"
+        android:textSize="50px" />
+</LinearLayout>

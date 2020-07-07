@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_process"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv_process_member"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65px"
+                android:gravity="center"
+                android:text="党员大会流程"
+                android:textColor="@color/colorWhite"
+                android:textSize="58px"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:background="@drawable/shape_party"
+                android:paddingBottom="19px"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:paddingTop="19px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1.会前准备"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="58px"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="· 确定内容时间"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="· 通知党员"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="· 正、副书记或有关人员协商准预案"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:background="@drawable/shape_party"
+                android:paddingBottom="19px"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:paddingTop="19px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="2.开会"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="58px"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="· 统计人数"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="· 宣布开会提出议题"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="· 开展讨论"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="· 归纳意见"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="· 举手表决形成决议"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="· 做好记录"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:background="@drawable/shape_party"
+                android:paddingBottom="19px"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:paddingTop="19px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="3.小组长归纳小结"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="58px"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:background="@drawable/shape_party"
+                android:paddingBottom="19px"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:paddingTop="19px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="4.向支部汇报"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="58px"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/sv_process_group"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65px"
+                android:gravity="center"
+                android:text="党小组会议流程"
+                android:textColor="@color/colorWhite"
+                android:textSize="58px"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:background="@drawable/shape_party"
+                android:paddingBottom="19px"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:paddingTop="19px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1.会前准备"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="58px"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="· 确定内容时间"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="· 通知党员"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="· 准备有关资料"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:background="@drawable/shape_party"
+                android:paddingBottom="19px"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:paddingTop="19px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="2.开会"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="58px"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="· 做好记录"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="· 分析党员群众思想"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="· 工作学习思想汇报"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="· 研究讨论党务工作"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="· 开展批评 自我批评"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="40px"
+                android:text="· 学习讨论"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:background="@drawable/shape_party"
+                android:paddingBottom="19px"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:paddingTop="19px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="3.小组长归纳小结"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="58px"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:background="@drawable/shape_party"
+                android:paddingBottom="19px"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:paddingTop="19px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="4.向支部汇报"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="58px"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/include_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.hckj.yddxst.activity.CalendarActivity">
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="919px"
+        android:layout_height="219px"
+        android:layout_marginTop="194px"
+        android:src="@drawable/rl_top">
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="61px"
+        android:layout_marginRight="45px"
+        android:layout_marginTop="21px"
+        android:layout_above="@+id/layout_bottom"
+        android:background="@drawable/rl_bg"
+        android:orientation="horizontal"
+        android:layout_below="@+id/top">
+        <RelativeLayout
+            android:layout_width="210px"
+            android:layout_height="match_parent">
+            <com.hckj.yddxst.utils.ListViewUtil2
+                android:id="@+id/time_list"
+                android:layout_width="210px"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:layout_marginTop="42px"
+                android:dividerHeight="34px"
+                android:scrollbars="none">
+            </com.hckj.yddxst.utils.ListViewUtil2>
+            <ImageView
+                android:layout_width="10px"
+                android:layout_height="match_parent"
+                android:layout_marginTop="42px"
+                android:layout_marginLeft="190px"
+                android:layout_marginBottom="86px"
+                android:src="@drawable/line_bg">
+            </ImageView>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/title_list"
+            android:layout_width="280px"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:layout_marginTop="42px"
+            android:dividerHeight="34px">
+        </ListView>
+        <ListView
+            android:id="@+id/context_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:layout_marginRight="30px"
+            android:layout_marginBottom="30px"
+            android:layout_marginTop="27px"
+            android:dividerHeight="34px">
+        </ListView>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="271px"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="235px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_bot_circle" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="410px"
+            android:layout_height="171px"
+            android:layout_above="@id/iv_bot_circle"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bg_bot_back2" />
+
+        <ImageView
+            android:id="@+id/iv_bot_circle"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/bg_bot_2" />
+    </RelativeLayout>
+
+</RelativeLayout>

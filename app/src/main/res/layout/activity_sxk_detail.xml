@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="919px"
+        android:layout_height="219px"
+        android:layout_marginTop="161px"
+        android:src="@drawable/top">
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15px"
+        android:layout_marginHorizontal="60px"
+        android:layout_marginBottom="30px"
+        android:background="#80FFFFFF"
+        android:orientation="vertical"
+        android:layout_above="@+id/layout_bottom"
+        android:layout_below="@+id/top">
+        <TextView
+            android:id="@+id/sxk_title"
+            android:layout_width="860px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="58px"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="团结抗疫　共克时艰——在中非团结抗疫
+特别峰会上的主旨讲话"
+            android:textSize="60px">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line">
+        </ImageView>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="40px"
+            android:layout_marginBottom="40px"
+            android:scrollbars="vertical"
+            android:scrollbarFadeDuration="0"
+            android:fadeScrollbars="false"
+            android:scrollbarStyle="outsideOverlay"
+            android:paddingRight="20px"
+            android:scrollbarThumbVertical="@drawable/hk"
+            android:scrollbarSize="20px"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_sxk_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="4px"
+                android:textColor="@color/black"
+                android:textSize="40px" />
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bot_circle">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="424px"
+            android:layout_height="117px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_bot_back3" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

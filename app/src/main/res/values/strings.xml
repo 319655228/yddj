@@ -1,0 +1,28 @@
+<resources>
+    <string name="mood_normal">正常</string>
+    <string name="mood_smile">微笑</string>
+    <string name="mood_sad">悲伤</string>
+    <string name="mood_anger">发怒</string>
+    <string name="mood_joy">高兴</string>
+    <string name="mood_anticipation">期望</string>
+    <string name="mood_disgust">厌恶</string>
+    <string name="mood_surprise">惊讶</string>
+    <string name="mood_fear">恐惧</string>
+    <string name="mood_trust">信任</string>
+    <string name="mood_doubt">疑问</string>
+
+
+    <string name="sayhi">您好，您可以点击右侧的麦克风问我问题哦！</string>
+    <string name="saybye">感谢您使用人功智能党建助手，期待再次见到您哟！</string>
+    <string name="searching">正在为您搜索相关资料</string>
+    <string name="other_quesiotn">请问您还想学习哪些知识呢</string>
+    <string name="no_asr">不好意思，这个问题尚未收录，已返回至中心进行完善</string>
+    <string name="no_question">您好像没有进行提问。</string>
+    <string name="string_3dnv">3D女</string>
+    <string name="string_rednv">红衣女</string>
+    <string name="finish_tips">再点击一次返回，即可退出本应用</string>
+
+    <string name="meeting_begin">欢迎您使用人工智能会议主持人，我会引导您进行规范的党小组会流程，请选择议题进行下一步。</string>
+    <string name="meeting_select">请确认本次党小组会的议题。</string>
+    <string name="meeting_finish">感谢您参加今天的党小组会。</string>
+</resources>

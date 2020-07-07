@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:id="@+id/layout_device_num"
+        android:layout_width="900px"
+        android:layout_height="600px"
+        android:layout_marginTop="600px"
+        android:background="@drawable/bg_dialog_progress"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70px"
+            android:gravity="center"
+            android:text="请先认证设备号"
+            android:textColor="@color/colorWhite"
+            android:textSize="60px"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_device_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180px"
+            android:layout_marginTop="100px"
+            android:layout_marginRight="180px"
+            android:layout_marginBottom="60px"
+            android:background="@color/colorWhite"
+            android:ellipsize="end"
+            android:imeOptions="actionDone"
+            android:padding="15px"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="60px" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="240px"
+            android:layout_height="96px"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_dialog_btn_ok"
+            android:text="确认"
+            android:textColor="@color/colorWhite"
+            android:textSize="40px"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</RelativeLayout>
+
+

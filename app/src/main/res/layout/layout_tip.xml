@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="375px"
+    android:layout_height="250px"
+    android:id="@+id/ll_container"
+    android:background="@drawable/bg_bubble"
+    android:orientation="vertical"
+    android:paddingLeft="50px"
+    android:paddingTop="12px"
+    android:paddingRight="35px"
+    android:paddingBottom="30px">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="您可以问："
+        android:textColor="@color/colorWhite"
+        android:textSize="36px"
+        android:textStyle="normal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tips"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

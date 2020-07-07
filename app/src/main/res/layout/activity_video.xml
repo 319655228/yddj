@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack"
+        android:paddingTop="30px"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_video_player" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="200px"
+        android:layout_marginRight="50px"
+        android:scrollbars="none">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="新闻标题\n新闻标题"
+            android:textColor="#ff8d2a"
+            android:textSize="60px"
+            android:textStyle="bold" />
+
+    </ScrollView>
+
+    <com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer
+        android:id="@+id/video_player"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="380px" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20px"
+        android:gravity="center"
+        android:src="@drawable/ic_chevron_left_white_24dp"
+        android:textColor="@color/colorWhite" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/video_player"
+        android:orientation="vertical"
+        android:id="@+id/layout_desc"
+        android:padding="50px">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="内容概要"
+            android:textColor="#ff8d2a"
+            android:textSize="60px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:background="@drawable/shape_video_desc"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="vertical"
+            android:text="内容概要"
+            android:textColor="@color/colorGold"
+            android:textSize="50px"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

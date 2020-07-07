@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B0000000"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="900px"
+            android:layout_height="1024px"
+            android:background="@drawable/bg_dialog_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200px"
+                android:layout_marginTop="300px"
+                android:layout_marginRight="200px"
+                android:ellipsize="end"
+                android:maxHeight="450px"
+                android:minHeight="450px"
+                android:text="文字"
+                android:textColor="@color/colorWhite"
+                android:textSize="50px"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="100px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="240px"
+                    android:layout_height="96px"
+                    android:background="@drawable/bg_dialog_btn_ok"
+                    android:gravity="center"
+                    android:text="测试文字"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="40px"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="240px"
+                    android:layout_height="96px"
+                    android:layout_marginLeft="50px"
+                    android:background="@drawable/bg_dialog_btn_ok"
+                    android:gravity="center"
+                    android:text="测试文字"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="40px"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

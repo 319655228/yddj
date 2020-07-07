@@ -1,0 +1,239 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <!--195px-->
+    <RelativeLayout
+        android:id="@+id/layout_content_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="20px"
+            android:layout_height="375px"
+            android:layout_alignLeft="@id/layout_cur_segment"
+            android:layout_alignTop="@id/layout_cur_segment"
+            android:layout_marginLeft="-15px"
+            android:background="@drawable/img_title_left" />
+
+        <ImageView
+            android:layout_width="117px"
+            android:layout_height="375px"
+            android:layout_alignTop="@id/layout_cur_segment"
+            android:layout_alignRight="@id/layout_cur_segment"
+            android:layout_marginRight="-15px"
+            android:background="@drawable/img_title_right" />
+
+        <LinearLayout
+            android:id="@+id/layout_cur_segment"
+            android:layout_width="586px"
+            android:layout_height="350px"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="63px"
+            android:layout_marginRight="47px"
+            android:background="@drawable/bg_meeting_title"
+            android:orientation="vertical"
+            android:paddingTop="10px">
+
+            <ImageView
+                android:layout_width="203px"
+                android:layout_height="53px"
+                android:layout_gravity="center"
+                android:layout_marginTop="15px"
+                android:background="@drawable/bg_cur_segment" />
+
+            <ImageView
+                android:layout_width="444px"
+                android:layout_height="13px"
+                android:layout_gravity="center"
+                android:layout_marginTop="10px"
+                android:background="@drawable/img_title_underline" />
+
+            <TextView
+                android:id="@+id/tv_cur_segment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18px"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/colorWhite"
+                android:textSize="48px" />
+
+            <TextView
+                android:id="@+id/tv_next_segment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="下一环节："
+                android:textColor="@color/colorWhite"
+                android:textSize="30px" />
+
+            <com.hckj.yddxst.widget.MaequeeText
+                android:id="@+id/tv_list_segment"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:layout_marginTop="24px"
+                android:background="@drawable/bg_meeting_segment"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center|left"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:singleLine="true"
+                android:text="   "
+                android:textColor="@color/colorWhite"
+                android:textSize="35px" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="375px"
+            android:layout_height="375px"
+            android:layout_marginLeft="45px"
+            android:layout_marginTop="63px">
+
+            <ImageView
+                android:layout_width="112px"
+                android:layout_height="match_parent"
+                android:background="@drawable/img_people_left" />
+
+            <ImageView
+                android:layout_width="14px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/img_people_right" />
+
+            <ImageView
+                android:id="@+id/iv_volume"
+                android:layout_width="88px"
+                android:layout_height="88px"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="15px"
+                android:background="@drawable/bg_volume_open" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_content_ppt"
+        android:layout_width="match_parent"
+        android:layout_height="490px"
+        android:layout_below="@id/layout_content_title"
+        android:layout_margin="45px">
+
+        <ImageView
+            android:id="@+id/iv_meeting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:visibility="gone" />
+
+        <com.hckj.yddxst.widget.EmptyControlVideo
+            android:id="@+id/vp_meeting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/layout_content_desc"
+        android:layout_width="match_parent"
+        android:layout_height="350px"
+        android:layout_below="@id/layout_content_ppt"
+        android:layout_marginLeft="45px"
+        android:layout_marginRight="45px"
+        android:background="@drawable/bg_meeting_content"
+        android:paddingTop="65px">
+
+        <TextView
+            android:id="@+id/tv_meeting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="12px"
+            android:padding="25px"
+            android:text=""
+            android:textColor="@color/colorWhite"
+            android:textSize="30px" />
+    </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_meeting_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="137px"
+        android:layout_below="@+id/layout_content_desc"
+        android:layout_marginLeft="45px"
+        android:layout_marginTop="15px"
+        android:layout_marginRight="45px"
+        android:background="@drawable/bg_meeting_join"
+        android:paddingLeft="20px"
+        android:paddingTop="70px"
+        />
+
+    <com.hckj.yddxst.widget.MeetingSpeakView
+        android:id="@+id/layoutSpeakView"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_below="@id/rv_meeting_nickname"
+        android:layout_marginLeft="45px"
+        android:layout_marginTop="15px"
+        android:layout_marginRight="45px" />
+
+    <ImageView
+        android:layout_width="154px"
+        android:layout_height="131px"
+        android:layout_alignLeft="@id/layout_content_ppt"
+        android:layout_alignTop="@id/layout_content_ppt"
+        android:layout_marginLeft="-25px"
+        android:layout_marginTop="-25px"
+        android:background="@drawable/bg_ppt_left" />
+
+    <ImageView
+        android:layout_width="676px"
+        android:layout_height="255px"
+        android:layout_alignRight="@id/layout_content_ppt"
+        android:layout_alignBottom="@id/layout_content_ppt"
+        android:layout_marginRight="-25px"
+        android:layout_marginBottom="-25px"
+        android:background="@drawable/bg_ppt_right" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bot_circle"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/btn_content_previous"
+            android:layout_width="320px"
+            android:layout_height="120px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_pre_short" />
+
+        <ImageView
+            android:id="@+id/btn_content_next"
+            android:layout_width="416px"
+            android:layout_height="130px"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_next_short" />
+
+        <ImageView
+            android:id="@+id/btn_next_seg"
+            android:layout_width="309px"
+            android:layout_height="120px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_next_set_short" />
+    </RelativeLayout>
+</RelativeLayout>

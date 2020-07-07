@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="919px"
+        android:layout_height="270px"
+        android:layout_marginTop="194px"
+        android:src="@drawable/top">
+    </ImageView>
+<!--    <LinearLayout-->
+<!--        android:id="@+id/search"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80px"-->
+<!--        android:layout_marginTop="51px"-->
+<!--        android:layout_marginLeft="158px"-->
+<!--        android:layout_marginRight="136px"-->
+<!--        android:layout_below="@+id/top"-->
+<!--        android:background="@drawable/shape_bg_sxk">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/et_search"-->
+<!--            android:layout_width="0px"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="4"-->
+<!--            android:paddingVertical="5px"-->
+<!--            android:paddingLeft="20px"-->
+<!--            android:textColor="#FFE4D1A4"-->
+<!--            android:textCursorDrawable="@drawable/cursor_bg"-->
+<!--            android:textSize="36px"-->
+<!--            android:background="@null" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/btn_search"-->
+<!--            android:layout_width="60px"-->
+<!--            android:layout_height="49px"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginRight="33px"-->
+<!--            android:src="@drawable/search" />-->
+<!--    </LinearLayout>-->
+
+    <!--    android:layout_marginRight="132px"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_bottom"
+        android:layout_marginTop="80px"
+        android:layout_below="@+id/top">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.hckj.yddxst.utils.ListViewUtil
+                android:id="@+id/sxk_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="150px"
+                android:layout_marginTop="60px"
+                android:layout_marginRight="49px"
+                android:layout_marginBottom="30px"
+                android:divider="@null"
+                android:dividerHeight="34px"
+                android:fadeScrollbars="false"
+                android:paddingRight="83px"
+                android:scrollbarFadeDuration="0"
+                android:scrollbarSize="60px"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbarThumbVertical="@drawable/hk"
+                android:scrollbars="vertical">
+
+            </com.hckj.yddxst.utils.ListViewUtil>
+            <TextView
+                android:id="@+id/myText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="无数据!"
+                android:textColor="#FFFAEEBF"
+                android:textSize="60px" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_pre"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginRight="49px"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10px"
+            android:background="@drawable/bg_pre" />
+
+        <ImageView
+            android:id="@+id/btn_next"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginRight="49px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_next" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="271px"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="235px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_bot_circle" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="410px"
+            android:layout_height="171px"
+            android:layout_above="@id/iv_bot_circle"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bg_bot_back2" />
+
+        <ImageView
+            android:id="@+id/iv_bot_circle"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/bg_bot_2" />
+    </RelativeLayout>
+
+</RelativeLayout>

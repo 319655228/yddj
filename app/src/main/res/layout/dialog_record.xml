@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorBlack"
+    android:layout_height="586px">
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="811px"
+        android:layout_height="491px"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_recording"
+        android:gravity="center"
+        android:paddingTop="30px"
+        android:paddingBottom="30px">
+
+        <ImageView
+            android:id="@+id/iv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="45px" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_recording"
+        android:layout_width="110px"
+        android:layout_height="110px"
+        android:layout_alignBottom="@id/ll_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-50px"
+        android:background="@drawable/img_record_active" />
+
+    <TextView
+        android:text="可点击麦克风以停止录音"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="15px"
+        android:textSize="30px" />
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hckj.yddxst">
+
+    <application
+        android:name=".YddxApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_yddx"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/icon_yddx"
+        android:supportsRtl="true"
+        android:theme="@style/FullScreenTheme">
+        <activity android:name=".activity.CalendarActivity"></activity>
+        <activity android:name=".activity.SxkThirdActivity" />
+        <activity android:name=".activity.SxkSecondActivity" />
+        <activity android:name=".activity.SxkDetailActivity" />
+        <activity android:name=".activity.RLActivity" />
+        <activity android:name=".activity.SXKActivity" />
+        <activity android:name=".activity.DJZXActivity" />
+        <activity android:name=".activity.PoliticalPhotoActivity" />
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.HotSpotActivity" />
+        <activity android:name=".activity.VideoActivity" />
+        <activity android:name=".activity.QaGuideActivity" />
+        <activity android:name=".activity.CourseListActivity" />
+        <activity android:name=".activity.FollowHeartActivity" />
+        <activity android:name=".activity.ClassifyActivity" />
+        <activity android:name=".activity.OnlineCheckActivity" />
+        <activity
+            android:name=".activity.UpgradeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogUiTheme" />
+        <activity android:name=".activity.CheckModeActivity" />
+        <activity android:name=".activity.CheckMentalActivity" />
+        <activity android:name=".activity.BuildingActivity" />
+        <activity android:name=".activity.BuildingDetailActivity" />
+        <activity android:name=".activity.IndexActivity" />
+        <activity android:name=".activity.PartyGroupActivity" />
+        <activity android:name=".activity.RedTourActivity" />
+        <activity android:name=".activity.ClassifyPreActivty" />
+        <activity android:name=".activity.DocClassifyActvity" />
+        <activity android:name=".activity.DocListActivity" />
+        <activity android:name=".activity.DocDetailActivity" />
+        <activity android:name=".activity.PartyOathActivity" /> <!-- 开机启动广播 -->
+        <receiver android:name=".broadcast.AutoBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+</manifest>

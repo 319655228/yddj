@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.hckj.yddxst.widget.TipLayout
+        android:id="@+id/layout_tips"
+        android:layout_width="375px"
+        android:layout_height="250px"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="320px"
+        android:layout_marginRight="10px"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="40px"
+        android:textColor="@color/colorWhite"
+        android:textSize="35px" />
+
+    <ImageView
+        android:id="@+id/iv_record"
+        android:layout_width="110px"
+        android:layout_height="110px"
+        android:layout_above="@id/layout_bottom"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40px"
+        android:layout_marginBottom="15px"
+        android:background="@drawable/img_record" />
+
+    <ImageView
+        android:id="@+id/iv_guide"
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/img_wdzy" />
+
+    <com.hckj.yddxst.widget.QuestionAnswerLayout
+        android:id="@+id/layout_qa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_bottom"
+        android:layout_marginBottom="20px"
+        android:visibility="gone" />
+
+    <!--    底部按钮布局-->
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="271px"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="235px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_bot_circle" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="410px"
+            android:layout_height="171px"
+            android:layout_above="@id/iv_bot_circle"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bg_bot_back2" />
+
+        <ImageView
+            android:id="@+id/iv_bot_circle"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/bg_bot_2" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

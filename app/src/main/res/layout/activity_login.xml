@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="1920px"
+    android:background="@color/colorBlue"
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity">
+
+    <com.hckj.yddxst.widget.EmptyControlVideo
+        android:id="@+id/video_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/layout_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="264px">
+
+        <com.hckj.yddxst.widget.RoundRectLayout
+            android:layout_width="610px"
+            android:layout_height="610px"
+            android:layout_marginLeft="30px">
+
+            <com.google.android.cameraview.CameraView
+                android:id="@+id/camera_view"
+                android:layout_width="610px"
+                android:layout_height="610px"
+                android:adjustViewBounds="false"
+                android:background="@android:color/black"
+                android:keepScreenOn="true"
+                app:autoFocus="true"
+                app:facing="front"
+                app:flash="off" />
+
+            <ImageView
+                android:layout_width="450px"
+                android:layout_height="450px"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_locator_front" />
+        </com.hckj.yddxst.widget.RoundRectLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_mark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_qrcode"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_marginBottom="30px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="30px"
+            android:text="用户未注册，请使用微信扫码注册后\n重新进行人脸登录功能"
+            android:textColor="@color/colorWhite"
+            android:textSize="38px"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_login_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="1000px"
+            android:layout_height="400px"
+            android:background="@drawable/bg_login_info">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250px"
+                android:layout_marginTop="65px"
+                android:text="您已成功登录"
+                android:textColor="@color/colorWhite"
+                android:textSize="50px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_user_info"
+                android:layout_width="550px"
+                android:layout_height="180px"
+                android:layout_marginLeft="100px"
+                android:layout_marginTop="180px"
+                android:gravity="left|center"
+                android:textColor="@color/colorWhite"
+                android:textSize="50px"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_avator"
+                android:layout_width="240px"
+                android:layout_height="300px"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="60px" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btn_confirm"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:background="@drawable/bg_login_btn"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/colorWhite"
+            android:textSize="45px" />
+
+    </LinearLayout>
+</RelativeLayout>

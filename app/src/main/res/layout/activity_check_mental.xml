@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_yddx"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_header"
+        layout="@layout/include_header" />
+
+    <include
+        layout="@layout/include_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/tv_common_title"
+        android:layout_below="@id/include_header"
+        android:text="心理测验" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_evaluate_character"
+            style="@style/tv_fh_item"
+            android:text="忧郁评测" />
+
+        <TextView
+            android:id="@+id/tv_evaluate_pressure"
+            style="@style/tv_fh_item"
+            android:layout_marginTop="18px"
+            android:text="压力评测" />
+
+        <TextView
+            android:id="@+id/tv_evaluate_relation"
+            style="@style/tv_fh_item"
+            android:layout_marginTop="18px"
+            android:text="焦虑评测" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50px"
+            android:gravity="center"
+            android:text="扫描二维码进行评测"
+            android:textColor="@color/colorWhite"
+            android:textSize="50px"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_qrcode"
+            android:layout_width="500px"
+            android:layout_height="500px" />
+    </LinearLayout>
+
+</RelativeLayout>

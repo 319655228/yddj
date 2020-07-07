@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_back"
+
+        layout="@layout/include_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <include
+        android:id="@+id/include_footer"
+        layout="@layout/include_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="550px"
+        android:layout_above="@id/include_back"
+        android:layout_marginBottom="10px"
+        android:background="@drawable/bg_news_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190px"
+            android:orientation="vertical"
+            android:padding="5px">
+
+            <com.hckj.yddxst.widget.MaequeeText
+                android:id="@+id/tv_news_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_divide"
+                android:layout_marginTop="30px"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="5px"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="80px"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view_divide"
+                android:layout_width="match_parent"
+                android:layout_height="8px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:background="@color/colorWhite" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/tv_news_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_divide"
+                android:ellipsize="end"
+                android:lineSpacingExtra="4px"
+                android:padding="10px"
+                android:textColor="@color/colorWhite"
+                android:textSize="45px" />
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_info"
+        android:layout_width="900px"
+        android:layout_height="600px"
+        android:layout_above="@id/layout_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100px"
+        android:visibility="gone" />
+
+    <com.hckj.yddxst.widget.EmptyControlVideo
+        android:id="@+id/video_player"
+        android:layout_width="900px"
+        android:layout_height="600px"
+        android:layout_above="@id/layout_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100px"
+        android:visibility="gone" />
+</RelativeLayout>

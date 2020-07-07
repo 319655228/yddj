@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="831px"
+        android:layout_height="1298px"
+        android:layout_marginTop="190px"
+        >
+
+        <RelativeLayout
+            android:layout_width="700px"
+            android:layout_height="1078px"
+            android:layout_gravity="center">
+            <com.google.android.cameraview.CameraView
+                android:id="@+id/camera_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="false"
+                android:keepScreenOn="true"
+                app:autoFocus="true"
+                app:facing="front"
+                app:flash="off" />
+
+            <ImageView
+                android:id="@+id/iv_preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:background="#33000000"
+            android:gravity="center"
+            android:text="正在为您处理中"
+            android:textColor="@color/colorWhite"
+            android:textSize="40px"
+            android:visibility="gone" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/photo_bg">
+        </ImageView>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_failed"
+            android:layout_width="892px"
+            android:layout_height="67px"
+            android:background="@drawable/bg_tv"
+            android:gravity="center"
+            android:text="留影上传失败，请重新上传！"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:visibility="gone" >
+        </TextView>
+        <ImageView
+            android:id="@+id/btn_photo"
+            android:layout_width="233px"
+            android:layout_height="85px"
+            android:layout_gravity="center"
+            android:layout_marginTop="7px"
+            android:background="@drawable/pzly"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/bg_qr_code"
+                    android:layout_width="210px"
+                    android:layout_height="210px"
+                    android:src="@drawable/bg_qr_code"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/qr_code"
+                    android:layout_width="192px"
+                    android:layout_height="192px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/tv_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bg_qr_code"
+                    android:layout_centerHorizontal="true"
+                    android:text="\n扫描二维码分享"
+                    android:textSize="36px"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/btn_rephoto"
+                android:layout_width="233px"
+                android:layout_height="85px"
+                android:background="@drawable/bg_meeting_rephoto"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/btn_upload"
+                android:layout_width="233px"
+                android:layout_height="85px"
+                android:background="@drawable/bg_meeting_upload"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="271px"
+        android:gravity="bottom">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="235px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_bot_circle" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="410px"
+            android:layout_height="171px"
+            android:layout_above="@id/iv_bot_circle"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bg_bot_back2" />
+
+        <ImageView
+            android:id="@+id/iv_bot_circle"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/bg_bot_2" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
